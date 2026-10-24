@@ -91,5 +91,3 @@ I used an AI assistant to scaffold the `Job`/`Reducer` classes, to draft unit te
 **Edge case.** Primary row 10 (e10, `start` for j1 at t=4): j1 is already `failed`, but the watermark is 8, so the event is rejected as `time below watermark`, and j1 stays untouched. Row 7 (e7) shows the opposite boundary: `start` at t=6 is accepted because it equals `next_start_at`.
 
 **Execution evidence.** unit test run `Ran 22 tests in 0.763s OK`; primary summary `7 accepted / 6 rejected`; secondary job `x` `succeeded` with 2 attempts; malformed input exit code `2` (`error: Expecting ',' delimiter: line 2 column 1 (char 34)`).
-
-**Video:** https://drive.google.com/file/d/1u9eeDtDSlbt6qcgULHuEACvHUuGkzowk/view?usp=sharing
